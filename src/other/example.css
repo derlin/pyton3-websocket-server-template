@@ -1,0 +1,31 @@
+body{
+    /*background: url("bg") repeat-x;*/
+    background-color: #4682b4;
+}
+
+.link{
+    cursor: pointer;
+    padding: 3px;
+}
+.container {
+    background: white none;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+.row.main{
+    min-height: 500px;
+}
+
+.well {
+    text-align: center;
+}
+
+#gdc_button {
+    margin: 26px 0 0 0;
+}
+
+#hello_answer {
+    margin-top:12px;
+    padding: 4px;
+}

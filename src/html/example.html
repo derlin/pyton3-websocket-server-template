@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebSocket with cherrypy and ws4pi example</title>
+    <meta charset="utf-8"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="example.css" rel="stylesheet"/>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/socket.js"></script>
+    <script type="text/javascript" src="/message.js"></script>
+    <script type="text/javascript" src="/example.js"></script>
+</head>
+<body>
+<div class="container">
+
+    <div class="row">
+
+        <!--title-->
+        <div class="col-lg-12">
+            <h1 class="page-header">WST
+                <small>a WebSocket with CherryPy and ws4pi template</small>
+            </h1>
+        </div>
+
+        <!--alert in case the socket closed-->
+        <div class="col-lg-12">
+            <div class="alert alert-danger hidden" role="alert" id="connection_lost_alert">
+                <strong>Oh snap! </strong>The connexion has been lost...
+            </div>
+        </div>
+
+    </div>
+
+    <!--main content-->
+    <div class="row main">
+
+
+        <!--hello-->
+        <div class="col-lg-6 col-md-6">
+            <div class="well well-large">
+                <button class="btn link" id="hello_btn">Hello World</button>
+                <div id="hello_answer">  </div>
+            </div>
+        </div>
+
+
+        <!-- json encoded -->
+        <div class="col-lg-6 col-md-6">
+            <div class="well well-large">
+                <div>
+
+                    <div>
+                        Numbers:
+                        <input type="number" name="nbr1_input" min="1" value="1">
+                        <input type="number" name="nbr2_input" min="1" value="1">
+                    </div>
+                </div>
+                <div>
+                    <button class="btn link" id="gdc_button">Compute GDC</button>
+                </div>
+            </div>
+            <div id="gdc_answer"></div>
+        </div>
+
+
+    </div>
+    <!-- end main content-->
+
+    <!--footer-->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; Lucy Linder 2014</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- end container -->
+</div>
+
+</body>
+</html>
