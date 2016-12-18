@@ -4,7 +4,7 @@
  * @date 10.07.2014
  */
 
-/** the server address, in the form ws//<host>:<port>/<cherrypy exposed method> */
+/** the server address, in the form ws://<host>:<port>/<cherrypy exposed method> */
 var SERVER_ADDR = 'ws://localhost:42000/ws'; // TODO change it
 /**the connection status */
 var connected = false;

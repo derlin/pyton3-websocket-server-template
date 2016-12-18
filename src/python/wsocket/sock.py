@@ -106,5 +106,3 @@ class GenericWebSocket( WebSocket ):
         Set the controller used by this socket.
         """
         self.controller = controller
-        self.controller.register_client_socket( self )
-        log.info( self, 'client socket registered' )

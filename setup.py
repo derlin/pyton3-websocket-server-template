@@ -18,6 +18,6 @@ setup(
         'cherrypy-wsgiserver'
     ],
 
+    license = 'GPL v2',
     url = '',
-    license = '',
 )
